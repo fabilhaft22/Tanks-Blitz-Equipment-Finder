@@ -18,6 +18,7 @@ If you run the script, it will create two text files (.txt) and list the tanks f
 So for example, if you put the script in a any folder and run it, the text files will be created in the same folder.
 
 **How it works**
+
 In the game files there are specific files that define which tanks have special consumables.
 This script can read that and make it easily readable for the user.
 
@@ -28,7 +29,7 @@ Due to the script taking a copy of the files, **IT DOES NOT** change anything ab
 
 
 
-If you want to use the source code instead of the exe, you will need to follow these steps:
+**If you want to use the source code instead of the exe, you will need to follow these steps:**
 
 - Setup a node environment (there are enough guides on how to get node.js working)
 - Setup a typescript compiler (you can just ask chatgpt on how to run typescript code in node)
