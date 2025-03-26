@@ -7,7 +7,7 @@ export function findRealTankName(tankName : string, strings : string) : string{
 
     realString = realString.slice(0, realString.indexOf(`"`))
 
-    if(realString.length > 0) return realString
+    if(realString.length > 1) return realString
 
     return `${tankName} (couldnt find real name)`
 }
@@ -31,7 +31,12 @@ export function findRealConsumableName(consumableName : string, strings : string
     else searchFor = `"consumables/${consumableName}/Name":`;
 
     let realString = strings.slice((strings.indexOf(searchFor) + searchFor.length + 2))
-    return realString.slice(0, realString.indexOf(`"`))
+    realString = realString.slice(0, realString.indexOf(`"`))
+
+
+    realString = `${realString} (codename: ${consumableName})`
+
+    return realString
 }
 
 export function findRealProvisionName(provisionName : string, strings : string) : string{
@@ -42,5 +47,10 @@ export function findRealProvisionName(provisionName : string, strings : string) 
 
 
     let realString = strings.slice((strings.indexOf(searchFor) + searchFor.length + 2))
-    return realString.slice(0, realString.indexOf(`"`))
+
+    realString = realString.slice(0, realString.indexOf(`"`))
+
+    realString = `${realString} (codename: ${provisionName})`
+
+    return realString
 }
