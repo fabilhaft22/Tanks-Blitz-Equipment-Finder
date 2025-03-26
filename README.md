@@ -1,48 +1,56 @@
+---
+
 # Tanks Blitz Equipment Finder
 
-This script finds all tanks that have special equipment (consumables and provisions) in Tanks Blitz (Lesta version of World of Tanks Blitz) and shows them in an easy to read text file. 
-The script will stay working for multiple game updates, because it dynamically reads the game files of the currently installed game version.
+This script identifies all tanks equipped with special equipment (consumables and provisions) in **Tanks Blitz** (the Lesta version of **World of Tanks Blitz**) and generates a clearly formatted text file displaying the results. The script is designed to remain functional across multiple game updates, as it dynamically reads the game files from the currently installed version.
 
+## **System Requirements**
 
-**Requirements to use this script**
+- **Tanks Blitz** must be installed on your C: Drive, as the script does not support other installation locations at this time.
+- If you wish to use the source code instead of the compiled executable, you will need knowledge of running TypeScript code in a Node.js environment.
+- While **optional**, it is recommended to use a translator mod, such as the one created by `_YTSH_` and `GonnaHetzMe`. A link to a modding community Discord server can be found [here](https://discord.gg/kEgTtvRdqQ).
 
-- You have to have Tanks Blitz installed on your C: Drive, other locations are not supported by this script yet.
-- If you want to use the source code instead of just getting the exe, you will need to know how to run Typescript code in a node environment.
-- This is NOT NECESSARY, but I still suggest you use a translator mod like the one made by `_YTSH_` and  `GonnaHetzMe`. Link to a modding discord server can be found [here](https://discord.gg/kEgTtvRdqQ).
+You can download the script from the official release page [here](https://github.com/fabilhaft22/Tanks-Blitz-Equipment-Finder/releases/tag/v1.0).
 
-You can find the script [here](https://github.com/fabilhaft22/Tanks-Blitz-Equipment-Finder/releases/tag/v1.0).
+---
 
+## **How to Use the Script**
 
-### **Script usage**
+Upon running the script, it will generate two `.txt` files listing the tanks associated with each piece of equipment. The files will be created in the same directory where the script is executed. For example, if you place the script in any folder and run it, the text files will be saved in that folder.
 
-If you run the script, it will create two text files (.txt) and list the tanks for every equipment in the directory you ran the script from.
-So for example, if you put the script in a any folder and run it, the text files will be created in the same folder.
+---
 
-### **How it works**
+## **How It Works**
 
-In the game files there are specific files that define which tanks have special consumables.
-This script can read that and make it easily readable for the user.
+The game files contain specific data that identifies which tanks have special consumables. This script is designed to read those files and present the information in an easily readable format.
 
-The script looks for the files it needs in the Tanks Blitz directory (provisions/common.xml.dvpl, consumables/common.xml.dvpl and Strings/ru.yaml.dvpl).
-It then copies these files and decompresses them into readable content. From there it just finds the predefined equipments and looks for which tanks use it.
+The script searches for the necessary files within the **Tanks Blitz** directory, specifically:  
+- `provisions/common.xml.dvpl`
+- `consumables/common.xml.dvpl`
+- `Strings/ru.yaml.dvpl`
 
-Due to the script taking a copy of the files, **IT DOES NOT** change anything about your game files. It just takes a copy and decompresses that copy.
+It copies these files, decompresses them, and extracts the relevant information to identify which tanks use which special equipment.
 
+**Important**: The script only copies and decompresses the files—**it does not alter your game files in any way**.
 
+---
 
-### **If you want to use the source code instead of the exe, you will need to follow these steps:**
+## **Using the Source Code**
 
-- Setup a node environment (there are enough guides on how to get node.js working)
-- Setup a typescript compiler (you can just ask chatgpt on how to run typescript code in node)
+To run the script from source code rather than the compiled executable, follow these steps:
 
-- Install the following packages:
-  
-**lz4**
+1. Set up a Node.js environment (there are numerous guides available online to help you install and configure Node.js).
+2. Set up a TypeScript compiler. (You can refer to resources like ChatGPT for assistance on how to run TypeScript code in Node.js).
+3. Install the required packages:
+
+### **Install `lz4`**:
 ```
 npm install lz4
 ```
 
-**crc**
+### **Install `crc`**:
 ```
 npm install crc
 ```
+
+---
