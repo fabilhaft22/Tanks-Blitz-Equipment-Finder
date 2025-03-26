@@ -8,6 +8,7 @@ The script will stay working for multiple game updates, because it dynamically r
 
 - You have to have Tanks Blitz installed on your C: Drive, other locations are not supported by this script yet.
 - If you want to use the source code instead of just getting the exe, you will need to know how to run Typescript code in a node environment.
+- This is NOT NECESSARY, but I still suggest you use a translator mod like the one made by `_YTSH_` and  `GonnaHetzMe`. Link to a modding discord server can be found [here]((https://discord.gg/kEgTtvRdqQ)).
 
 You can find the script [here](https://github.com/fabilhaft22/Tanks-Blitz-Equipment-Finder/releases/tag/v1.0).
 
