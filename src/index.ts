@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import { decompressDVPLToString } from "./DecompressDVPL";
+import { decompressDVPLToString } from "./decompressDVPL";
 import { findRealTankName, findRealConsumableName, findRealProvisionName} from "./findRealName"
 
 const { findProvisionsDVPLFile, findConsumablesDVPLFile, findStringsDVPLFile } = require('./searchDVPLFiles.js');
