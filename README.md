@@ -31,7 +31,7 @@ The script searches for the necessary files within the **Tanks Blitz** directory
 
 It copies these files, decompresses them, and extracts the relevant information to identify which tanks use which special equipment.
 
-**Important**: The script only copies and decompresses the files—**it does not alter your game files in any way**.
+**Important**: The script only copies and decompresses the copied files—**it does not alter your game files in any way**.
 
 ---
 
