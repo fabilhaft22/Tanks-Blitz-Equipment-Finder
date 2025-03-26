@@ -35,6 +35,7 @@ Due to the script taking a copy of the files, **IT DOES NOT** change anything ab
 - Setup a typescript compiler (you can just ask chatgpt on how to run typescript code in node)
 
 - Install the following packages:
+  
 **lz4**
 ```
 npm install lz4
